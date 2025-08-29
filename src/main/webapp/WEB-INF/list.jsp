@@ -7,5 +7,10 @@
     </head>
     <body>
         <h1>Tarefas</h1>
+        <form action="/tarefas/insert" method="post">
+            <label for="tarefa">Nova Tarefa</label>
+            <input type="text" name="tarefa" />
+            <button type="submit">Salvar</button>
+        </form>
     </body>
 </html>
