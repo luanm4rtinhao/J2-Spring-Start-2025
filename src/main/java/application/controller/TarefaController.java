@@ -16,6 +16,10 @@ public class TarefaController {
 
     @RequestMapping("/list")
     public String list(Model ui) {
+        tarefas.add(new Tarefa(1,"Aprender java"));
+        tarefas.add(new Tarefa(2,"Estudar IoT"));
+
+
         ui.addAttribute("tarefas", tarefas);
         return "list";
     }
