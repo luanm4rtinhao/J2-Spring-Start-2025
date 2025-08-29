@@ -16,6 +16,7 @@ public class TarefaController {
 
     @RequestMapping("/list")
     public String list(Model ui) {
+        ui.addAttribute("tarefas", tarefas);
         return "list";
     }
 }
